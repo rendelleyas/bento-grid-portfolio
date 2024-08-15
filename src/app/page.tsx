@@ -2,6 +2,25 @@
 import Image from "next/image";
 import { useState } from "react";
 
+import rjse from "../../public/rjse.svg";
+import prog_icon from "../../public/programming-icon.svg";
+import prog_content from "../../public/programming-content.svg";
+import framework_icon from "../../public/framework-icon.svg";
+import framework_content from "../../public/framework-content.svg";
+import monkey from "../../public/monkey.svg";
+import contact_icon from "../../public/contact-icon.svg";
+
+import vue_icon from "../../public/vue-icon.svg";
+import php_icon from "../../public/php-icon.svg";
+import laravel_icon from "../../public/laravel-icon.svg";
+import nodejs_icon from "../../public/nodejs-icon.svg";
+import antd_icon from "../../public/antd-icon.svg";
+import react_icon from "../../public/react-icon.svg";
+import mysql_icon from "../../public/mysql-icon.svg";
+import nuxt_icon from "../../public/nuxt-icon.svg";
+import fourplus from "../../public/fourplus.svg";
+import twentyplus from "../../public/twentyplus.svg";
+
 export default function Home() {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
@@ -14,7 +33,7 @@ export default function Home() {
             <div className="h-full flex flex-col ">
               <div className="bg-[#161616] m-2 rounded flex items-center justify-center">
                 <Image
-                  src="/rjse.svg"
+                  src={rjse}
                   alt="RJSE Logo"
                   width={300}
                   height={300}
@@ -27,7 +46,7 @@ export default function Home() {
                     <div className="items-center justify-center p-4 min-h-[280px] flex-grow-0 py-6">
                       <div className="items-center justify-center">
                         <Image
-                          src="/programming-icon.svg"
+                          src={prog_icon}
                           alt="RJSE Logo"
                           width={50}
                           height={50}
@@ -38,7 +57,7 @@ export default function Home() {
                         Programming
                       </h1>
                       <Image
-                        src="/programming-content.svg"
+                        src={prog_content}
                         alt="RJSE Logo"
                         width={200}
                         height={400}
@@ -49,7 +68,7 @@ export default function Home() {
                     <div className="items-center justify-center p-4 min-h-[280px] flex-grow-0 py-6">
                       <div className="items-center justify-center ">
                         <Image
-                          src="/framework-icon.svg"
+                          src={framework_icon}
                           alt="RJSE Logo"
                           width={50}
                           height={50}
@@ -60,7 +79,7 @@ export default function Home() {
                         Frameworks
                       </h1>
                       <Image
-                        src="/framework-content.svg"
+                        src={framework_content}
                         alt="RJSE Logo"
                         width={200}
                         height={400}
@@ -141,7 +160,7 @@ export default function Home() {
                     onMouseLeave={() => setIsHovered(false)}
                   >
                     <Image
-                      src="/monkey.svg"
+                      src={monkey}
                       alt="RJSE Logo"
                       width={160}
                       height={160}
@@ -170,7 +189,7 @@ export default function Home() {
                   <div className="rounded bg-[#01BE53] cursor-pointer">
                     <div>
                       <Image
-                        src="/contact-icon.svg"
+                        src={contact_icon}
                         alt="RJSE Logo"
                         width={70}
                         height={70}
@@ -193,7 +212,7 @@ export default function Home() {
                 <div className="grid grid-cols-4 gap-2 items-center justify-center w-full p-7">
                   <div>
                     <Image
-                      src="/vue-icon.svg"
+                      src={vue_icon}
                       alt="RJSE Logo"
                       width={90}
                       height={90}
@@ -202,7 +221,7 @@ export default function Home() {
                   </div>
                   <div>
                     <Image
-                      src="/php-icon.svg"
+                      src={php_icon}
                       alt="RJSE Logo"
                       width={90}
                       height={90}
@@ -211,7 +230,7 @@ export default function Home() {
                   </div>
                   <div>
                     <Image
-                      src="/laravel-icon.svg"
+                      src={laravel_icon}
                       alt="RJSE Logo"
                       width={90}
                       height={90}
@@ -220,7 +239,7 @@ export default function Home() {
                   </div>
                   <div>
                     <Image
-                      src="/nodejs-icon.svg"
+                      src={nodejs_icon}
                       alt="RJSE Logo"
                       width={90}
                       height={90}
@@ -231,7 +250,7 @@ export default function Home() {
                 <div className="grid grid-cols-4 gap-2 items-center justify-center w-full p-7">
                   <div>
                     <Image
-                      src="/antd-icon.svg"
+                      src={antd_icon}
                       alt="RJSE Logo"
                       width={90}
                       height={90}
@@ -240,7 +259,7 @@ export default function Home() {
                   </div>
                   <div>
                     <Image
-                      src="/react-icon.svg"
+                      src={react_icon}
                       alt="RJSE Logo"
                       width={90}
                       height={90}
@@ -249,7 +268,7 @@ export default function Home() {
                   </div>
                   <div>
                     <Image
-                      src="/mysql-icon.svg"
+                      src={mysql_icon}
                       alt="RJSE Logo"
                       width={90}
                       height={90}
@@ -258,7 +277,7 @@ export default function Home() {
                   </div>
                   <div>
                     <Image
-                      src="/nuxt-icon.svg"
+                      src={nuxt_icon}
                       alt="RJSE Logo"
                       width={90}
                       height={90}
@@ -273,7 +292,7 @@ export default function Home() {
                     <div className="items-center justify-center p-4 min-h-[280px] flex-grow-0 py-6">
                       <div className="items-center justify-center">
                         <Image
-                          src="/fourplus.svg"
+                          src={fourplus}
                           alt="RJSE Logo"
                           width={120}
                           height={120}
@@ -292,7 +311,7 @@ export default function Home() {
                     <div className="items-center justify-center p-4 min-h-[280px] flex-grow-0 py-6">
                       <div className="items-center justify-center">
                         <Image
-                          src="/twentyplus.svg"
+                          src={twentyplus}
                           alt="RJSE Logo"
                           width={190}
                           height={190}
