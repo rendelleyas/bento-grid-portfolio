@@ -91,7 +91,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="bg-[#161616] m-2 rounded  items-center justify-center p-8 h-[300px]">
-                <p className="xs:text-6xl sm:text-6xl md:text-7xl lg:text-7xl text-center">
+                <p className="text-center xs:text-5xl sm:text-6xl md:text-7xl lg:text-7xl ">
                   I<span className="text-[#01BE53]"> craft</span> and
                   <br></br>
                   <span className="text-[#01BE53]"> build </span>

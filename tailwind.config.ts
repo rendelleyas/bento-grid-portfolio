@@ -17,7 +17,7 @@ const config: Config = {
       sm: { min: "639px" },
       // => @media (max-width: 639px) { ... }
 
-      xs: { min: "420px" },
+      xs: { min: "200px" },
     },
     extend: {
       backgroundImage: {
