@@ -7,6 +7,8 @@ import prog_icon from "../../public/programming-icon.svg";
 import prog_content from "../../public/programming-content.svg";
 import framework_icon from "../../public/framework-icon.svg";
 import framework_content from "../../public/framework-content.svg";
+import double_arrow from "../../public/double-arrow.svg";
+
 import monkey from "../../public/monkey.svg";
 import contact_icon from "../../public/contact-icon.svg";
 
@@ -98,7 +100,7 @@ export default function Home() {
                 <p className="flex items-end justify-end relative p-4 font-bold group bottom-0">
                   Portfolio here
                   <Image
-                    src="/double-arrow.svg"
+                    src={double_arrow}
                     alt="Arrow"
                     width={20}
                     height={20}
@@ -288,8 +290,8 @@ export default function Home() {
               </div>
               <div className="m-2 rounded flex items-center justify-center">
                 <div className="grid grid-cols-2 gap-2 items-center justify-center w-full">
-                  <div className="bg-[#161616] rounded items-center justify-center flex">
-                    <div className="items-center justify-center p-4 min-h-[280px] flex-grow-0 py-6">
+                  <div className="bg-[#161616] rounded items-center justify-center flex h-full">
+                    <div className="items-center justify-center p-4 flex-grow-0 py-6">
                       <div className="items-center justify-center">
                         <Image
                           src={fourplus}
@@ -307,8 +309,8 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="bg-[#161616] rounded items-center justify-center flex">
-                    <div className="items-center justify-center p-4 min-h-[280px] flex-grow-0 py-6">
+                  <div className="bg-[#161616] rounded items-center justify-center flex h-full">
+                    <div className="items-center justify-center p-4 flex-grow-0 py-6">
                       <div className="items-center justify-center">
                         <Image
                           src={twentyplus}
