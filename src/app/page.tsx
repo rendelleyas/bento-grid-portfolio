@@ -27,7 +27,7 @@ export default function Home() {
   const [showModal, setShowModal] = useState<boolean>(false);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex min-h-screen flex-col items-center justify-between bg-black text-white">
       <div className="w-full ">
         <div className="grid h-full md:grid-cols-3">
           {/* First Column */}
