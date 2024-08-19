@@ -11,13 +11,13 @@ const config: Config = {
       lg: { min: "1080px" },
       // => @media (max-width: 1023px) { ... }
 
-      md: { min: "767px" },
+      md: { min: "768px" },
       // => @media (max-width: 767px) { ... }
 
-      sm: { min: "639px" },
+      sm: { min: "640px" },
       // => @media (max-width: 639px) { ... }
 
-      xs: { min: "200px" },
+      xs: { min: "100px" },
     },
     extend: {
       backgroundImage: {

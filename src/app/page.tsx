@@ -24,16 +24,16 @@ import fourplus from "../../public/fourplus.svg";
 import twentyplus from "../../public/twentyplus.svg";
 
 export default function Home() {
-  const [isHovered, setIsHovered] = useState<boolean>(false);
+  const [showModal, setShowModal] = useState<boolean>(false);
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <div className="w-full">
+      <div className="w-full ">
         <div className="grid h-full md:grid-cols-3">
           {/* First Column */}
           <div className=" m-2 rounded">
             <div className="h-full flex flex-col ">
-              <div className="bg-[#161616] m-2 rounded flex items-center justify-center">
+              <div className="bg-[#161616] m-2 rounded flex items-center justify-center hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
                 <Image
                   src={rjse}
                   alt="RJSE Logo"
@@ -44,7 +44,7 @@ export default function Home() {
               </div>
               <div className="m-2 rounded flex items-center justify-center">
                 <div className="grid grid-cols-2 gap-2 items-center justify-center w-full">
-                  <div className="bg-[#161616] rounded items-center justify-center flex">
+                  <div className="bg-[#161616] rounded items-center justify-center flex hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
                     <div className="items-center justify-center p-4 min-h-[280px] flex-grow-0 py-6">
                       <div className="items-center justify-center">
                         <Image
@@ -66,7 +66,7 @@ export default function Home() {
                       />
                     </div>
                   </div>
-                  <div className="bg-[#161616] rounded items-center justify-center flex">
+                  <div className="bg-[#161616] rounded items-center justify-center flex hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
                     <div className="items-center justify-center p-4 min-h-[280px] flex-grow-0 py-6">
                       <div className="items-center justify-center ">
                         <Image
@@ -90,15 +90,15 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="bg-[#161616] m-2 rounded  items-center justify-center p-8 h-[300px]">
-                <p className="text-center xs:text-5xl sm:text-6xl md:text-7xl lg:text-7xl ">
+              <div className="bg-[#161616] m-2 rounded  items-center justify-center p-8 h-[300px] hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102 group/test">
+                <p className="text-center text-5xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-7xl">
                   I<span className="text-[#01BE53]"> craft</span> and
                   <br></br>
                   <span className="text-[#01BE53]"> build </span>
                   stuff{" "}
                 </p>
-                <p className="flex items-end justify-end relative p-4 font-bold group bottom-0">
-                  Portfolio here
+                <div className="flex invisible items-center justify-end relative p-4  group bottom-0 group-hover/test:visible cursor-pointer">
+                  <p className="text-lg font-bold">Portfolio</p>
                   <Image
                     src={double_arrow}
                     alt="Arrow"
@@ -107,7 +107,7 @@ export default function Home() {
                     className="mr-2 ml-2"
                   />
                   <span className="absolute bottom-0 left-0 right-0 h-full hidden group-hover:block transition-transform duration-300 ease-in-out transform-gpu hover:bottom-[-4px]"></span>
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ export default function Home() {
           {/* Second Column */}
           <div className=" m-2 rounded">
             <div className="grid grid-rows-3 gap-2">
-              <div className="bg-[#161616] m-2 rounded p-4 row-span-3">
+              <div className="bg-[#161616] m-2 rounded p-4 row-span-3 hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
                 <h1 className="text-left text-2xl font-bold ">
                   Rendell Jay S. Eyas
                 </h1>
@@ -125,12 +125,16 @@ export default function Home() {
                   <span className="text-[#01BE53]">|</span> React{" "}
                   <span className="text-[#01BE53]">|</span> MySQL
                 </p>
-                {/* <button onClick={() => setIsHovered(!isHovered)}>Resume</button> */}
-                <button className="bg-[#01BE53] hover:bg-blue-700 text-white font-bold py-1 px-4 rounded my-4">
+                <button
+                  className="bg-[#01BE53] hover:bg-blue-700 text-white font-bold py-1 px-4 rounded my-4"
+                  onClick={() => {
+                    window.open("/Resume.pdf", "_blank");
+                  }}
+                >
                   Resume
                 </button>
               </div>
-              <div className="bg-[#161616] m-2 rounded row-span-12 pb-12 h-[543px]">
+              <div className="bg-[#161616] m-2 rounded row-span-12 pb-12 h-[543px] hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
                 <div className="p-4">
                   <h1 className="text-left text-3xl font-bold mb-2">
                     Who am I
@@ -156,11 +160,7 @@ export default function Home() {
               </div>
               <div className="m-2 rounded">
                 <div className="grid grid-cols-2 gap-2">
-                  <div
-                    className="rounded bg-[#161616] h-[160px]"
-                    onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)}
-                  >
+                  <div className="rounded bg-[#161616] h-[160px] hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
                     <Image
                       src={monkey}
                       alt="RJSE Logo"
@@ -188,7 +188,10 @@ export default function Home() {
                       }}
                     /> */}
                   </div>
-                  <div className="rounded bg-[#01BE53] cursor-pointer">
+                  <div
+                    className="rounded bg-[#01BE53] cursor-pointer"
+                    onClick={() => setShowModal(true)}
+                  >
                     <div>
                       <Image
                         src={contact_icon}
@@ -210,7 +213,7 @@ export default function Home() {
           {/* Third Row */}
           <div className=" m-2 rounded">
             <div className="h-full flex flex-col ">
-              <div className="bg-[#161616] m-2 rounded  items-center justify-center h-[290px]">
+              <div className="bg-[#161616] m-2 rounded  items-center justify-center h-[290px] hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
                 <div className="grid grid-cols-4 gap-2 items-center justify-center w-full p-7">
                   <div>
                     <Image
@@ -290,7 +293,7 @@ export default function Home() {
               </div>
               <div className="m-2 rounded flex items-center justify-center">
                 <div className="grid grid-cols-2 gap-2 items-center justify-center w-full">
-                  <div className="bg-[#161616] rounded items-center justify-center flex h-full">
+                  <div className="bg-[#161616] rounded items-center justify-center flex h-full hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
                     <div className="items-center justify-center p-4 flex-grow-0 py-6">
                       <div className="items-center justify-center">
                         <Image
@@ -309,7 +312,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="bg-[#161616] rounded items-center justify-center flex h-full">
+                  <div className="bg-[#161616] rounded items-center justify-center flex h-full hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
                     <div className="items-center justify-center p-4 flex-grow-0 py-6">
                       <div className="items-center justify-center">
                         <Image
@@ -330,7 +333,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="bg-[#161616] m-2 rounded  items-center justify-center p-8 h-[300px]">
+              <div className="bg-[#161616] m-2 rounded  items-center justify-center p-8 h-[300px] hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
                 <p className="p-7 text-center xs:text-5xl sm:text-3xl md:text-7xl lg:text-7xl">
                   In Progress
                 </p>
@@ -346,6 +349,72 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {showModal ? (
+        <>
+          <div className="fixed inset-0 bg-gray-700 bg-opacity-60 z-40"></div>
+          <div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none transition ease-in-out">
+            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-[#161616] outline-none focus:outline-none">
+                <div className="p-4">
+                  <div className="text-center text-2xl font-bold">
+                    Contact Me!
+                  </div>
+                  <form className="p-4">
+                    <div className="mb-4">
+                      <label htmlFor="name" className="block text-white">
+                        Name
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        className="w-full px-4 py-2 mt-2 bg-[#222222] border rounded-md focus:outline-none focus:ring-2 focus:ring-[#01BE53] focus:border-transparent"
+                      />
+                    </div>
+                    <div className="mb-4">
+                      <label htmlFor="name" className="block text-white">
+                        Email
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your email"
+                        className="w-full px-4 py-2 mt-2 bg-[#222222] border rounded-md focus:outline-none focus:ring-2 focus:ring-[#01BE53] focus:border-transparent"
+                      />
+                    </div>
+                    <div className="mb-4">
+                      <label htmlFor="name" className="block text-white">
+                        Message
+                      </label>
+                      <textarea
+                        placeholder="Enter your message"
+                        className="w-full px-4 py-2 mt-2 bg-[#222222] border rounded-md focus:outline-none focus:ring-2 focus:ring-[#01BE53] focus:border-transparent"
+                      />
+                    </div>
+                  </form>
+                </div>
+                <div className="flex items-center justify-end p-6 ">
+                  <button
+                    className="text-[#01BE53] background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1"
+                    type="button"
+                    onClick={() => setShowModal(false)}
+                  >
+                    Close
+                  </button>
+                  <button
+                    className=" bg-[#01BE53] active:bg-yellow-700 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                    type="button"
+                    onClick={() => setShowModal(false)}
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      ) : null}
     </main>
   );
 }
