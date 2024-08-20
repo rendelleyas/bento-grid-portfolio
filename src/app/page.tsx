@@ -24,6 +24,7 @@ import fourplus from "../../public/fourplus.svg";
 import twentyplus from "../../public/twentyplus.svg";
 // @ts-ignore
 import resume from "../files/Resume.pdf";
+import Link from "next/link";
 
 export default function Home() {
   const [showModal, setShowModal] = useState<boolean>();
@@ -128,20 +129,20 @@ export default function Home() {
                 <h1 className="text-left text-2xl font-bold ">
                   Rendell Jay S. Eyas
                 </h1>
-                <p className="text-left text-sm mt-1 text-[#8B8B8B]">
+                <p className="text-left text-sm mt-3 text-[#8B8B8B] mb-6">
                   Web Developer <span className="text-[#01BE53]">|</span>{" "}
                   Laravel <span className="text-[#01BE53]">|</span> VueJs{" "}
                   <span className="text-[#01BE53]">|</span> React{" "}
                   <span className="text-[#01BE53]">|</span> MySQL
                 </p>
-                <button
+                <Link
                   className="bg-[#01BE53] hover:bg-blue-700 text-white font-bold py-1 px-4 rounded my-4"
-                  onClick={() => {
-                    window.open(resume, "_blank");
-                  }}
+                  href={resume}
+                  locale={false}
+                  target="_blank"
                 >
                   Resume
-                </button>
+                </Link>
               </div>
               <div className="bg-[#161616] m-2 rounded row-span-12 pb-12 h-[543px] hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
                 <div className="p-4">
