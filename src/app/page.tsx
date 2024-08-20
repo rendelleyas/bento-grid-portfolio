@@ -99,7 +99,14 @@ export default function Home() {
                   <span className="text-[#01BE53]"> build </span>
                   stuff{" "}
                 </p>
-                <div className="flex invisible items-center justify-end relative p-4  group bottom-0 group-hover/test:visible cursor-pointer">
+                <div
+                  className="flex invisible items-center justify-end relative p-4  group bottom-0 group-hover/test:visible cursor-pointer"
+                  onClick={() =>
+                    window.open(
+                      "https://docs.google.com/presentation/d/14_r6SUCYp93EOs9wpYo730dC0AB2Z1gw/edit?pli=1#slide=id.p1"
+                    )
+                  }
+                >
                   <p className="text-lg font-bold">Portfolio</p>
                   <Image
                     src={double_arrow}
