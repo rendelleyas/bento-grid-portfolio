@@ -22,9 +22,11 @@ import mysql_icon from "../../public/mysql-icon.svg";
 import nuxt_icon from "../../public/nuxt-icon.svg";
 import fourplus from "../../public/fourplus.svg";
 import twentyplus from "../../public/twentyplus.svg";
+// @ts-ignore
+import resume from "../files/Resume.pdf";
 
 export default function Home() {
-  const [showModal, setShowModal] = useState<boolean>(false);
+  const [showModal, setShowModal] = useState<boolean>();
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between bg-black text-white">
@@ -128,7 +130,7 @@ export default function Home() {
                 <button
                   className="bg-[#01BE53] hover:bg-blue-700 text-white font-bold py-1 px-4 rounded my-4"
                   onClick={() => {
-                    window.open("/Resume.pdf", "_blank");
+                    window.open(resume, "_blank");
                   }}
                 >
                   Resume
