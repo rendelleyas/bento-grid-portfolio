@@ -36,7 +36,7 @@ export default function Home() {
           {/* First Column */}
           <div className=" m-2 rounded">
             <div className="h-full flex flex-col ">
-              <div className="bg-[#161616] m-2 rounded flex items-center justify-center hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
+              <div className="bg-[#161616] m-2 rounded flex items-center justify-center hover:border-2 hover:shadow-lg hover:shadow-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
                 <Image
                   src={rjse}
                   alt="RJSE Logo"
@@ -47,7 +47,7 @@ export default function Home() {
               </div>
               <div className="m-2 rounded flex items-center justify-center">
                 <div className="grid grid-cols-2 gap-2 items-center justify-center w-full">
-                  <div className="bg-[#161616] rounded items-center justify-center flex hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
+                  <div className="bg-[#161616] rounded items-center justify-center flex hover:border-2 hover:shadow-lg hover:shadow-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
                     <div className="items-center justify-center p-4 min-h-[280px] flex-grow-0 py-6">
                       <div className="items-center justify-center">
                         <Image
@@ -69,7 +69,7 @@ export default function Home() {
                       />
                     </div>
                   </div>
-                  <div className="bg-[#161616] rounded items-center justify-center flex hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
+                  <div className="bg-[#161616] rounded items-center justify-center flex hover:border-2 hover:shadow-lg hover:shadow-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
                     <div className="items-center justify-center p-4 min-h-[280px] flex-grow-0 py-6">
                       <div className="items-center justify-center ">
                         <Image
@@ -93,7 +93,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="bg-[#161616] m-2 rounded  items-center justify-center p-8 h-[300px] hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102 group/test">
+              <div className="bg-[#161616] m-2 rounded  items-center justify-center p-8 h-[300px] hover:border-2 hover:shadow-lg hover:shadow-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102 group/test">
                 <p className="text-center text-5xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-7xl">
                   I<span className="text-[#01BE53]"> craft</span> and
                   <br></br>
@@ -125,7 +125,7 @@ export default function Home() {
           {/* Second Column */}
           <div className=" m-2 rounded">
             <div className="grid grid-rows-3 gap-2">
-              <div className="bg-[#161616] m-2 rounded p-4 row-span-3 hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
+              <div className="bg-[#161616] m-2 rounded p-4 row-span-3 hover:border-2 hover:shadow-lg hover:shadow-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
                 <h1 className="text-left text-2xl font-bold ">
                   Rendell Jay S. Eyas
                 </h1>
@@ -144,7 +144,7 @@ export default function Home() {
                   Resume
                 </Link>
               </div>
-              <div className="bg-[#161616] m-2 rounded row-span-12 pb-12 h-[543px] hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
+              <div className="bg-[#161616] m-2 rounded row-span-12 pb-12 h-[543px] hover:border-2 hover:shadow-lg hover:shadow-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
                 <div className="p-4">
                   <h1 className="text-left text-3xl font-bold mb-2">
                     Who am I
@@ -170,7 +170,7 @@ export default function Home() {
               </div>
               <div className="m-2 rounded">
                 <div className="grid grid-cols-2 gap-2">
-                  <div className="rounded bg-[#161616] h-[160px] hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
+                  <div className="rounded bg-[#161616] h-[160px] hover:border-2 hover:shadow-lg hover:shadow-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
                     <Image
                       src={monkey}
                       alt="RJSE Logo"
@@ -199,7 +199,7 @@ export default function Home() {
                     /> */}
                   </div>
                   <div
-                    className="rounded bg-[#01BE53] cursor-pointer"
+                    className="rounded bg-[#01BE53] cursor-pointer hover:shadow-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102"
                     onClick={() => setShowModal(true)}
                   >
                     <div>
@@ -223,7 +223,7 @@ export default function Home() {
           {/* Third Row */}
           <div className=" m-2 rounded">
             <div className="h-full flex flex-col ">
-              <div className="bg-[#161616] m-2 rounded  items-center justify-center h-[290px] hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
+              <div className="bg-[#161616] m-2 rounded  items-center justify-center h-[290px] hover:border-2 hover:shadow-lg hover:shadow-white transition ease-in-out hover:-translate-y-1 hover:scale-102">
                 <div className="grid grid-cols-4 gap-2 items-center justify-center w-full p-7">
                   <div>
                     <Image
@@ -303,7 +303,7 @@ export default function Home() {
               </div>
               <div className="m-2 rounded flex items-center justify-center">
                 <div className="grid grid-cols-2 gap-2 items-center justify-center w-full">
-                  <div className="bg-[#161616] rounded items-center justify-center flex h-full hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
+                  <div className="bg-[#161616] rounded items-center justify-center flex h-full hover:border-2 hover:shadow-lg hover:shadow-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
                     <div className="items-center justify-center p-4 flex-grow-0 py-6">
                       <div className="items-center justify-center">
                         <Image
@@ -322,7 +322,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="bg-[#161616] rounded items-center justify-center flex h-full hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
+                  <div className="bg-[#161616] rounded items-center justify-center flex h-full hover:border-2 hover:shadow-lg hover:shadow-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
                     <div className="items-center justify-center p-4 flex-grow-0 py-6">
                       <div className="items-center justify-center">
                         <Image
@@ -343,7 +343,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="bg-[#161616] m-2 rounded  items-center justify-center p-8 h-[300px] hover:border-2 hover:border-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
+              <div className="bg-[#161616] m-2 rounded  items-center justify-center p-8 h-[300px] hover:border-2 hover:shadow-lg hover:shadow-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102">
                 <p className="p-7 text-center xs:text-5xl sm:text-3xl md:text-7xl lg:text-7xl">
                   In Progress
                 </p>
