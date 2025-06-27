@@ -184,19 +184,6 @@ export default function Home() {
                         transition: "opacity 0.5s",
                       }}
                     />
-                    {/* <Image
-                      src="/monkey2.svg"
-                      alt="RJSE Logo"
-                      width={160}
-                      height={160}
-                      className={`${isHovered ? "" : "hidden"}`}
-                      style={{
-                        width: "200px",
-                        marginTop: "-150px",
-                        marginLeft: "-20px",
-                        transition: "opacity 0.5s",
-                      }}
-                    /> */}
                   </div>
                   <div
                     className="rounded bg-[#01BE53] cursor-pointer hover:shadow-[#01BE53] transition ease-in-out hover:-translate-y-1 hover:scale-102"
@@ -334,7 +321,7 @@ export default function Home() {
                         />
                       </div>
                       <h1 className="text-center text-2xl font-bold m-4">
-                        Years
+                        Projects
                       </h1>
                       <div className="text-2xl text-center justify-center text-[#8B8B8B]">
                         Has been assigned for more than 20 projects
